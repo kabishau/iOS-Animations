@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Vre-vw-BeJ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Million Dollar View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MillionDollarViewController" customModule="iOS_Animations" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jTa-F7-ELe">
+                                <rect key="frame" x="16" y="335" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="Nyp-yq-zar"/>
+                                    <constraint firstAttribute="height" constant="30" id="yhh-lf-Ij4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7Nc-nv-KNi">
+                                <rect key="frame" x="16" y="404" width="343" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="RCe-CQ-Hdn"/>
+                                    <constraint firstAttribute="height" constant="30" id="X7L-Bn-R1I"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cfa-ca-WTa">
+                                <rect key="frame" x="149" y="510" width="77" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="fZt-oa-BJK"/>
+                                    <constraint firstAttribute="height" constant="30" id="lbL-8x-ixQ"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rbq-PC-nNQ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Million Dollar Design" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EIK-mz-WCI">
+                                <rect key="frame" x="50" y="158" width="275" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="JSc-kO-z4m"/>
+                                    <constraint firstAttribute="width" constant="275" id="iIZ-6z-XpU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="28"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="7Nc-nv-KNi" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="0in-gN-rNS"/>
+                            <constraint firstItem="jTa-F7-ELe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JX6-yc-OPe"/>
+                            <constraint firstItem="cfa-ca-WTa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="MkL-29-n9a"/>
+                            <constraint firstItem="7Nc-nv-KNi" firstAttribute="top" secondItem="jTa-F7-ELe" secondAttribute="bottom" constant="39" id="Ttq-ak-MDb"/>
+                            <constraint firstItem="EIK-mz-WCI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="94" id="Zzj-3X-aBA"/>
+                            <constraint firstItem="cfa-ca-WTa" firstAttribute="top" secondItem="7Nc-nv-KNi" secondAttribute="bottom" constant="76" id="cKE-KL-haj"/>
+                            <constraint firstItem="EIK-mz-WCI" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lcf-XF-hYu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cfa-ca-WTa" secondAttribute="bottom" constant="127" id="tpe-C6-xcJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="f8P-XD-wm4"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="jTa-F7-ELe" id="0Xo-5s-OJ5"/>
+                        <outlet property="emailTextFieldConstraint" destination="JX6-yc-OPe" id="rlz-8V-jGF"/>
+                        <outlet property="labelConstraint" destination="lcf-XF-hYu" id="cuS-hS-7br"/>
+                        <outlet property="loginButtonCenterConstraint" destination="MkL-29-n9a" id="Ass-NA-YXI"/>
+                        <outlet property="millionDollarLabel" destination="EIK-mz-WCI" id="QKA-JY-vm5"/>
+                        <outlet property="passwordTextField" destination="7Nc-nv-KNi" id="85R-ES-gji"/>
+                        <outlet property="passwordTextFieldConstraint" destination="0in-gN-rNS" id="1I8-Pg-Q1e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="372" y="33.733133433283363"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="sZh-Yp-opH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Vre-vw-BeJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="x1e-GW-4Tx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bu7-aI-eIy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Ev-u9-1hA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-393" y="34"/>
+        </scene>
+    </scenes>
+</document>
